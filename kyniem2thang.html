@@ -1,1 +1,88 @@
-<html><body>Chờ chút nữa có bất ngờ! 😘</body></html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kỷ niệm 2 tháng – Trí & Phương Nhi 💖</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background: #fffaf0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    h1 { color: #e75480; }
+    p { font-size: 18px; line-height: 1.6; }
+    .heart { font-size: 50px; animation: beat 1s infinite; }
+    @keyframes beat {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    img { max-width: 100%; border-radius: 12px; margin: 20px 0; }
+    .timeline { text-align: left; margin-top: 30px; }
+    .timeline li { margin-bottom: 10px; }
+    .promise { background: #ffe4e1; padding: 15px; border-radius: 8px; margin-top: 30px; }
+    button {
+      padding: 10px 20px;
+      background-color: #e75480;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #d03a69;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nút phát giọng nói -->
+  <button onclick="document.getElementById('voice').play()">🎙 Phát giọng nói</button>
+  <audio id="voice" loop>
+    <source src="giong-noi.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ audio.
+  </audio>
+
+  <!-- Nút phát nhạc ẩn -->
+  <button onclick="document.getElementById('ytmusic').src += ''">🎵 Phát nhạc</button>
+  <iframe id="ytmusic"
+    src="https://www.youtube.com/embed/fk0y7zRlVgg?autoplay=1&loop=1&playlist=fk0y7zRlVgg"
+    allow="autoplay"
+    style="width:0; height:0; border:none; visibility:hidden;">
+  </iframe>
+
+  <div class="container">
+    <div class="heart">💖</div>
+    <h1>Kỷ niệm 2 tháng – Dù xa nhưng vẫn yêu</h1>
+    <p><strong>Dear Phương Nhi,</strong><br>
+    Chúng ta yêu xa, nhưng không xa tình yêu.<br>
+    Mỗi ngày trôi qua là một ngày gần đến lúc được ôm nhau.<br>
+    Cảm ơn em vì đã cùng anh vượt qua tất cả.<br>
+    <em>Happy 2 months, my love!</em></p>
+
+    <img src="kyniemmm.jpg" alt="Ảnh kỷ niệm">
+
+    <div class="timeline">
+      <h2>📅 Timeline kỷ niệm</h2>
+      <ul>
+        <li><strong>01/06/2025:</strong> Ngày chính thức bắt đầu yêu nhau — yêu xa nhưng trái tim luôn kề bên.</li>
+      </ul>
+    </div>
+
+    <div class="promise">
+      <h2>🌟 Lời hứa & Ước nguyện</h2>
+      <p>Cùng nhau cố gắng để sớm gặp nhau. Anh mong một ngày được ôm em thật chặt, cùng cười nói chuyện chuyện tương lai. Mong mọi điều tốt đẹp nhất đến với chúng ta.</p>
+    </div>
+
+    <p style="margin-top: 40px;">From Trí – gửi đến tim Phương Nhiiiiiiiiiii 💫</p>
+  </div>
+</body>
+</html>
